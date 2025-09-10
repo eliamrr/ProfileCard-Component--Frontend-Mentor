@@ -1,0 +1,90 @@
+*{
+    /* Recursos:*/
+    /* ### Primary */
+    --Blue_600: hsl(185, 75%, 39%);
+    --Navy_950: hsl(229, 23%, 23%);
+    --Gray_500: hsl(227, 10%, 46%);
+    /* ### Neutral */
+    --Gray_100: hsl(225, 10%, 92%);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Kumbh Sans", sans-serif;
+    body{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--Blue_600);
+        background-image: url(./design/desktop-design.jpg); 
+        background-repeat:no-repeat;
+        background-position: center;
+        main{
+            width: 19.4em;
+            height: 20.9em;
+            text-align: center;
+            background-image: url(./images/bg-pattern-card.svg);
+            background-position: top;
+            background-repeat: no-repeat;
+            box-shadow: 0 0 2em gray;
+            border-radius: 1em;
+            background-color: var(--Gray_100);
+            .perfil{
+                padding-top: 5em;
+                text-align: center;
+                .perfil-img{
+                    padding: 0.3em;
+                    border-radius: 100%;
+                    background-color:var(--Gray_100);
+                }
+                .name{
+                    padding-top: 0.78em;
+                    font-size: 1em;
+                    color:white;
+                    color:var(--Navy_950);
+                    font-weight: 700;
+                    span{
+                        font-size: inherit;
+                        color: var(--Gray_500);
+                        font-weight: 400;
+                    }
+                }
+                .country{
+                    padding-top: 0.7em;
+                    font-size: 0.77em;
+                    font-weight: 400;                    
+                    color: var(--Gray_500);
+                }
+            }
+            .info-perfil{
+                margin-top: 1.27em;
+                padding-top: 1em;
+                display: flex;
+                justify-content: center;
+                border-top: 1px solid rgba(128, 128, 128, 0.29);
+                gap: 3em;
+                div{
+                    padding-top: 0.3em;
+                    .number{
+                        font-size: 1.1em;
+                        color:var(--Navy_950);  
+                        font-weight: 700;                      
+                    }
+                    .descrip{
+                        padding-top: 0.2em;
+                        font-size: 0.6em;
+                        font-weight: 700;                        
+                        color: var(--Gray_500);
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:375px){
+    body{
+        background-image: none;
+    }
+}
